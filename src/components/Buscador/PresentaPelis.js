@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MontaPoster from "./MontaPoster";
 
 export default class PresentaPelis extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class PresentaPelis extends Component {
         </h1>
         {listaPelis.map((el) => {
           return (
-            <div key={el.imddID} className="posterLista-item">
+            <div key={el.imdbID} className="posterLista-item">
               <MontaPoster linea={el} />
             </div>
           );
